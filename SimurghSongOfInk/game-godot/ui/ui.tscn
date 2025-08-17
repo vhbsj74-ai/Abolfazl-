@@ -1,0 +1,26 @@
+[gd_scene load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/ui.gd" id=1]
+
+[node name="UI" type="CanvasLayer"]
+script = ExtResource(1)
+
+[node name="Margin" type="MarginContainer" parent="."]
+offset_right = 1920.0
+offset_bottom = 1080.0
+
+[node name="HBox" type="HBoxContainer" parent="Margin"]
+anchor_right = 1.0
+anchor_bottom = 0.0
+offset_left = 16.0
+offset_top = 16.0
+offset_right = -16.0
+offset_bottom = 80.0
+
+[node name="HP" type="TextureProgressBar" parent="Margin/HBox"]
+value = 100.0
+size_flags_horizontal = 3
+
+[node name="Ink" type="Label" parent="Margin/HBox"]
+text = "Ink: 0"
+size_flags_horizontal = 1
