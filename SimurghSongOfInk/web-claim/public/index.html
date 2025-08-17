@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="fa">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Simurgh Claim</title>
+  <style>
+    body {font-family: sans-serif; background:#0f0f13; color:#eee; margin:0; padding:2rem}
+    .card {max-width:720px; margin:auto; background:#14151b; border:1px solid #2b2d36; border-radius:12px; padding:1.5rem}
+    button {background:#3b82f6; color:#fff; border:none; padding:0.6rem 1rem; border-radius:8px; cursor:pointer}
+    button:disabled {background:#2b2d36; cursor:not-allowed}
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h2>Simurgh: Claim SIM</h2>
+    <p>برای دریافت پاداش هفتگی، کیف‌پول را متصل کنید و مقدار قابل‌دریافت را ادعا کنید.</p>
+    <div>
+      <button id="connect">Connect Wallet</button>
+      <button id="claim" disabled>Claim</button>
+    </div>
+    <pre id="log"></pre>
+  </div>
+  <script type="module" src="/app.js"></script>
+</body>
+</html>
